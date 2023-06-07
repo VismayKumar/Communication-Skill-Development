@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+
+  <style>
+    /* Add your styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20;
+      padding: 0;
+    }
+
+    header {
+      background-color: rgb(53, 124, 124);
+      color: #fff;
+      padding: 20px;
+    }
+
+    footer {
+  background-color: rgb(53, 124, 124); /* To Match the background color of the header */
+  color: #fff;
+  padding: 20px;
+}
+
+
+   
+    h1 {
+      font-weight: bold;
+      margin: 0;
+    }
+
+    main {
+      margin: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      margin-top: 20px;
+    }
+
+    .question label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .question select {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .submit-btn {
+      margin-top: 20px;
+      color: aqua;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    #timer {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #333;
+      font-size: 20px;
+    }
+
+    .score {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #a54141;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 4px;
+      margin-top: 20px;
+    }
+
+    .score span {
+      font-size: 24px;
+      margin-right: 10px;
+    }
+
+    .score .score-text {
+      font-size: 16px;
+    }
+
+    .score.success {
+      background-color: #2ecc71;
+    }
+
+    .score.error {
+      background-color: #e74c3c;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Communication Skill Development</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../public/lessons.html">Lessons</a></li>
+        <li><a href="../public/exercises.html">Exercises</a></li>
+        <li><a href="../public/resources.html">Resources</a></li>
+        <li><a href="../public/contact.html">Contact</a></li>
+        <li><a href="../public/login.html">Login/SignUp</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="instructions">
+        <p>Read the following passage and answer the questions:</p>
+        <p>
+          Education has been a topic of philosophical inquiry since ancient times. Some of the earliest important educational thinkers include Socrates, Plato, and Aristotle. Socrates, the teacher of Plato, believed in the importance of dialogue and questioning to stimulate critical thinking and the search for truth. He famously claimed that he was not a teacher but a midwife, helping others give birth to their own knowledge. On the other hand, Aristotle, a student of Plato, focused on the practical aspects of education and the cultivation of good habits. He believed that education should aim at producing good and virtuous citizens. Aristotle considered human nature, habit, and reason to be equally important forces to be cultivated in education.
+
+          During the Medieval period, the idea of Perennialism was first formulated by St. Thomas Aquinas. Perennialism holds that one should teach principles and reasoning of everlasting importance, rather than just facts that are apt to change over time. It emphasizes the development of the human intellect and moral character. Perennialism has both religious and secular forms.
+
+          In the Renaissance, the French skeptic Michel de Montaigne critically examined education. He questioned the conventional wisdom of his time, challenging the assumption that university-educated philosophers were necessarily wiser than uneducated workers. Montaigne called for an education that focused on individual needs and experiences, emphasizing the importance of self-knowledge and self-improvement.
+
+          These early educational thinkers laid the groundwork for the theories and approaches that continue to influence education today. The philosophical debates they sparked regarding the purpose, methods, and content of education are still relevant as we strive to create effective and meaningful educational experiences for learners.
+        </p>
+      </div>
+      <div class="question">
+        <label for="answer1">Q1. What is the difference between the approaches of Socrates and Aristotle?</label>
+        <select id="answer1">
+          <option value="option1">1) Aristotle felt the need for repetition to develop good habits in students; Socrates felt that students need to be constantly questioned</option>
+          <option value="option2">2) Aristotle felt the need for rote-learning; Socrates emphasized on dialogic learning</option>
+          <option value="option3">3) There was no difference</option>
+          <option value="option4">4) Aristotle emphasized on the importance of paying attention to human nature; Socrates emphasized upon science</option>
+        </select>
+      </div>
+      <div class="question">
+        <label for="answer2">Q2. Who is the earliest important educational thinker?</label>
+        <select id="answer2">
+          <option value="option1">1) Socrates</option>
+          <option value="option2">2) Plato</option>
+          <option value="option3">3) Aristotle</option>
+          <option value="option4">4) St. Thomas Aquinas</option>
+        </select>
+      </div>
+      <div class="question">
+        <label for="answer3">Q3. What does Perennialism in education emphasize?</label>
+        <select id="answer3">
+          <option value="option1">1) Teaching facts and figures</option>
+          <option value="option2">2) Exposing students to a variety of subjects</option>
+          <option value="option3">3) Encouraging critical thinking and inquiry</option>
+          <option value="option4">4) Teaching principles and reasoning of everlasting importance</option>
+        </select>
+      </div>
+      <div class="question">
+        <label for="answer4">Q4. Which educational thinker critically examined education during the Renaissance?</label>
+        <select id="answer4">
+          <option value="option1">1) Socrates</option>
+          <option value="option2">2) Plato</option>
+          <option value="option3">3) Aristotle</option>
+          <option value="option4">4) Michel de Montaigne</option>
+        </select>
+      </div>
+      <div class="question">
+        <label for="answer5">Q5. What does Aristotle consider as equally important forces to be cultivated in education?</label>
+        <select id="answer5">
+          <option value="option1">1) Human nature, habit, and reason</option>
+          <option value="option2">2) Music, art, and physical discipline</option>
+          <option value="option3">3) Mathematics, literature, and history</option>
+          <option value="option4">4) Science, mathematics, and physical education</option>
+        </select>
+      </div>
+      <div class="submit-btn">
+        <button id="submitBtn" onclick="checkAnswer(); clearInterval(timer)">Submit</button>
+      </div>
+      <div id="result"></div>
+      <div id="timer"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Communication Skill Development. All rights reserved.</p>
+  </footer>
+
+  <script>
+    let timer;
+    let timeLeft = 360; // 6 minutes in seconds
+
+    function startTimer() {
+      timer = setInterval(() => {
+        timeLeft--;
+        if (timeLeft === 0) {
+          clearInterval(timer);
+          checkAnswer();
+        }
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+        document.getElementById("timer").innerHTML = `Time Remaining: ${minutes
+          .toString()
+          .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+      }, 1000);
+    }
+
+    function checkAnswer() {
+      const answer1 = document.getElementById("answer1").value;
+      const answer2 = document.getElementById("answer2").value;
+      const answer3 = document.getElementById("answer3").value;
+      const answer4 = document.getElementById("answer4").value;
+      const answer5 = document.getElementById("answer5").value;
+
+      const correctAnswer1 = "option1";
+      const correctAnswer2 = "option2";
+      const correctAnswer3 = "option4";
+      const correctAnswer4 = "option4";
+      const correctAnswer5 = "option1";
+
+      let score = 0;
+      let message = "";
+
+      if (answer1 === correctAnswer1) {
+        score++;
+      }
+
+      if (answer2 === correctAnswer2) {
+        score++;
+      }
+
+      if (answer3 === correctAnswer3) {
+        score++;
+      }
+
+      if (answer4 === correctAnswer4) {
+        score++;
+      }
+
+      if (answer5 === correctAnswer5) {
+        score++;
+      }
+
+      document.getElementById("submitBtn").disabled = true;
+      document.getElementById("submitBtn").style.backgroundColor = "gray";
+      
+      message = `You scored ${score} out of 5.`;
+
+      document.getElementById("result").innerHTML = message;
+    }
+
+    startTimer();
+  </script>
+</body>
+</html>

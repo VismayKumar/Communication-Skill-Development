@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Communication Skill Development</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <style>
+    /* Custom styles for the listening test */
+
+    header {
+      background-color: rgb(53, 124, 124);
+      color: #fff;
+      padding: 20px;
+    }
+
+    footer {
+  background-color: rgb(53, 124, 124); /* To Match the background color of the header */
+  color: #fff;
+  padding: 20px;
+}
+
+
+
+    .listening-container {
+      width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #f5f5f5;
+    }
+    .question {
+      margin-bottom: 10px;
+    }
+    .question label {
+      display: block;
+      font-weight: bold;
+    }
+    .question input[type="radio"] {
+      margin-right: 10px;
+    }
+    .submit-btn {
+      margin-top: 20px;
+    }
+    .part-container {
+      display: none;
+    }
+    .part-container.active {
+      display: block;
+    }
+    #score-container {
+      display: none;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Communication Skill Development</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../public/lessons.html">Lessons</a></li>
+        <li><a href="../public/exercises.html">Exercises</a></li>
+        <li><a href="../public/resources.html">Resources</a></li>
+        <li><a href="../public/contact.html">Contact</a></li>
+        <li><a href="../public/login.html">Login/SignUp</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <!-- Content of each webpage goes here -->
+    <div class="listening-container">
+      <h2>Listening Test</h2>
+      <audio src="./audio/A1 Listening Test  English Listening Test (mp3cut.net).mp3" controls></audio>
+      
+      <!-- Part 1 -->
+      <div class="part-container active" id="part1">
+        <div class="question">
+          <label for="q1">Question 1: What is Alisa's last name?</label>
+          <input type="radio" name="q1" value="a"> a) Thompson<br>
+          <input type="radio" name="q1" value="b"> b) Smith [Correct answer]<br>
+          <input type="radio" name="q1" value="c"> c) Johnson<br>
+          <input type="radio" name="q1" value="d"> d) Brown<br>
+        </div>
+        <div class="question">
+          <label for="q2">Question 2: What is Alisa's nationality?</label>
+          <input type="radio" name="q2" value="a"> a) British [Correct answer]<br>
+          <input type="radio" name="q2" value="b"> b) American<br>
+          <input type="radio" name="q2" value="c"> c) French<br>
+          <input type="radio" name="q2" value="d"> d) German<br>
+        </div>
+        <div class="question">
+          <label for="q3">Question 3: How old is Alisa?</label>
+          <input type="radio" name="q3" value="a"> a) 20<br>
+          <input type="radio" name="q3" value="b"> b) 22<br>
+          <input type="radio" name="q3" value="c"> c) 25 [Correct answer]<br>
+          <input type="radio" name="q3" value="d"> d) 28<br>
+        </div>
+        <div class="question">
+          <label for="q4">Question 4: What is Alisa's address in the U.S.?</label>
+          <input type="radio" name="q4" value="a"> a) 10 Maple Street<br>
+          <input type="radio" name="q4" value="b"> b) 14 Ramsey Street, Brooklyn [Correct answer]<br>
+          <input type="radio" name="q4" value="c"> c) 7 Oak Avenue<br>
+          <input type="radio" name="q4" value="d"> d) 22 Pine Road<br>
+        </div>
+        <div class="question">
+          <label for="q5">Question 5: What is Alisa's phone number?</label>
+          <input type="radio" name="q5" value="a"> a) 718-555-1234<br>
+          <input type="radio" name="q5" value="b"> b) 718-555-8545 [Correct answer]<br>
+          <input type="radio" name="q5" value="c"> c) 718-555-6789<br>
+          <input type="radio" name="q5" value="d"> d) 718-555-4321<br>
+        </div>
+        <div class="submit-btn">
+          <button onclick="submitPart('part1')">Submit Part 1</button>
+        </div>
+      </div>
+      
+      <!-- Part 2 -->
+      <div class="part-container active" id="part2">
+        <!-- Questions for Part 2 go here -->
+        <div class="question">
+          <label for="q6">Question 1: What is the name of the new Spanish teacher?</label>
+          <input type="radio" name="q6" value="a"> a) Luis Hernandez<br>
+          <input type="radio" name="q6" value="b"> b) Roberto Sanchez<br>
+          <input type="radio" name="q6" value="c"> c) Juan Martinez<br>
+          <input type="radio" name="q6" value="d"> d) Luis Sanchez [Correct answer]<br>
+        </div>
+        <div class="question">
+          <label for="q7">Question 2: Who is the director of the school?</label>
+          <input type="radio" name="q7" value="a"> a) Aria<br>
+          <input type="radio" name="q7" value="b"> b) Jenny<br>
+          <input type="radio" name="q7" value="c"> c) Emma<br>
+          <input type="radio" name="q7" value="d"> d) Aria [Correct answer]<br>
+        </div>
+        <div class="question">
+          <label for="q8">Question 3: Where is Salta located?</label>
+          <input type="radio" name="q8" value="a"> a) Buenos Aires<br>
+          <input type="radio" name="q8" value="b"> b) Mexico City<br>
+          <input type="radio" name="q8" value="c"> c) Salta [Correct answer]<br>
+          <input type="radio" name="q8" value="d"> d) Cordoba<br>
+        </div>
+        <div class="question">
+          <label for="q9">Question 4: What is Luis's email address?</label>
+          <input type="radio" name="q9" value="a"> a) luis700@gmail.com [Correct answer]<br>
+          <input type="radio" name="q9" value="b"> b) luis.sanchez@gmail.com<br>
+          <input type="radio" name="q9" value="c"> c) luis2000@gmail.com<br>
+          <input type="radio" name="q9" value="d"> d) luis.s@gmail.com<br>
+        </div>
+        <div class="question">
+          <label for="q10">Question 5: When is Jenny's party?</label>
+          <input type="radio" name="q10" value="a"> a) Sunday<br>
+          <input type="radio" name="q10" value="b"> b) Monday<br>
+          <input type="radio" name="q10" value="c"> c) Saturday [Correct answer]<br>
+          <input type="radio" name="q10" value="d"> d) Friday<br>
+        </div>
+        <div class="submit-btn">
+          <button onclick="submitPart('part2')">Submit Part 2</button>
+        </div>
+      </div>
+      
+      <!-- Part 3 -->
+      <div class="part-container active" id="part3">
+        <!-- Questions for Part 3 go here -->
+        <div class="question">
+          <label for="q11">Question 1: What objects are on Samuel's desk?</label>
+          <input type="radio" name="q11" value="a"> a) Computer and printer<br>
+          <input type="radio" name="q11" value="b"> b) Pens and pencils<br>
+          <input type="radio" name="q11" value="c"> c) Photo of his children<br>
+          <input type="radio" name="q11" value="d"> d) All of the above [Correct answer]<br>
+        </div>
+        <div class="question">
+          <label for="q12">Question 2: What items are on Carlos's table?</label>
+          <input type="radio" name="q12" value="a"> a) Laptop<br>
+          <input type="radio" name="q12" value="b"> b) Tissues<br>
+          <input type="radio" name="q12" value="c"> c) Spanish magazines<br>
+          <input type="radio" name="q12" value="d"> d) All of the above [Correct answer]<br>
+        </div>
+        <div class="question">
+          <label for="q13">Question 3: What items are on Jack's desk?</label>
+          <input type="radio" name="q13" value="a"> a) Computer<br>
+          <input type="radio" name="q13" value="b"> b) Red lamp<br>
+          <input type="radio" name="q13" value="c"> c) Black file<br>
+          <input type="radio" name="q13" value="d"> d) All of the above [Correct answer]<br>
+        </div>
+        <div class="submit-btn">
+          <button onclick="submitPart('part3')">Submit Part 3</button>
+        </div>
+      </div>
+      
+      
+      <div id="score-container">
+        <h3>Your Score: <span id="score"></span></h3>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Communication Skill Development. All rights reserved.</p>
+  </footer>
+  
+  <script src="script.js"></script>
+  <script>
+    let currentPart = 1;
+    const totalParts = 3;
+    let score = 0;
+    
+    function submitPart(partId) {
+      // Retrieve selected answers for the current part
+      const answer1 = document.querySelector('input[name="q1"]:checked');
+      const answer2 = document.querySelector('input[name="q2"]:checked');
+      const answer3 = document.querySelector('input[name="q3"]:checked');
+      const answer4 = document.querySelector('input[name="q4"]:checked');
+      const answer5 = document.querySelector('input[name="q5"]:checked');
+      const answer6 = document.querySelector('input[name="q6"]:checked');
+      const answer7 = document.querySelector('input[name="q7"]:checked');
+      const answer8 = document.querySelector('input[name="q8"]:checked');
+      const answer9 = document.querySelector('input[name="q9"]:checked');
+      const answer10 = document.querySelector('input[name="q10"]:checked');
+      const answer11 = document.querySelector('input[name="q11"]:checked');
+      const answer12 = document.querySelector('input[name="q12"]:checked');
+      const answer13 = document.querySelector('input[name="q13"]:checked');
+      
+    
+      
+      // Validate that all questions have been answered
+      if (!answer1 || !answer2) {
+        alert("Please answer all questions before submitting.");
+        return;
+      }
+      
+      // Calculate score for the current part
+      let partScore = 0;
+      if (partId === 'part1') {
+        if (answer1.value === 'b') {
+          partScore += 1;
+        }
+        if (answer2.value === 'a') {
+          partScore += 1;
+        }
+        if (answer3.value === 'c') {
+          partScore += 1;
+        }
+        if (answer4.value === 'b') {
+          partScore += 1;
+        }
+        if (answer5.value === 'b') {
+          partScore += 1;
+        }
+      } else if (partId === 'part2') {
+        if (answer6.value === 'd') {
+          partScore += 1;
+        }
+        if (answer7.value === 'd') {
+          partScore += 1;
+        }
+        if (answer8.value === 'c') {
+          partScore += 1;
+        }
+        if (answer9.value === 'a') {
+          partScore += 1;
+        }
+        if (answer10.value === 'c') {
+          partScore += 1;
+        }
+      } else if (partId === 'part3') {
+        if (answer11.value === 'd') {
+          partScore += 1;
+        }
+        if (answer12.value === 'd') {
+          partScore += 1;
+        }
+        if (answer13.value === 'd') {
+          partScore += 1;
+        }
+      }
+      
+      // Update total score
+      score += partScore;
+      
+      // Hide current part and display the next part
+      const currentPartContainer = document.getElementById(partId);
+      currentPartContainer.classList.remove('active');
+      currentPart += 1;
+      if (currentPart <= totalParts) {
+        const nextPartContainer = document.getElementById('part' + currentPart);
+        nextPartContainer.classList.add('active');
+      } else {
+        // All parts have been completed, show the score
+        const scoreContainer = document.getElementById('score-container');
+        const scoreText = document.getElementById('score');
+        scoreText.textContent = score + '/' + 13;
+        scoreContainer.style.display = 'block';
+      }
+
+
+      
+    }
+  </script>
+</body>
+</html>
